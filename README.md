@@ -4,11 +4,11 @@ This is a provider for strapi that allows you to upload files to a minio server.
 ## Installation
 use `npm` to install this package
 ```bash
-npm install strapi-provider-upload-minio
+npm install git+https://github.com/ericCHxia/strapi-provider-upload-minio.git
 ```
 use `yarn` to install this package
 ```bash
-yarn add strapi-provider-upload-minio
+yarn add git+https://github.com/ericCHxia/strapi-provider-upload-minio.git
 ```
 
 ## Configuration
