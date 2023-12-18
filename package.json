@@ -1,6 +1,16 @@
 {
   "name": "strapi-provider-upload-minio",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericCHxia/strapi-provider-upload-minio.git"
+  },
+  "contributors": [
+    {
+      "name": "Eric Xia",
+      "email": "ericchxia@gmail.com"
+    }
+  ],
   "scripts": {
     "build": "tsup"
   },
