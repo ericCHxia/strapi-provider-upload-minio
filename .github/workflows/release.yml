@@ -1,0 +1,27 @@
+name: Build and Package on Release
+
+on:
+  release:
+    types: [created]
+jobs:
+  build-and-package:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4.0.1
+      with:
+        node-version: '18'
+    - name: Install dependencies
+      run: yarn install
+    - name: Build
+      run: yarn build
+    - name: Package
+      run: yarn pack
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: strapi-provider-upload-minio
+        path: strapi-provider-upload-minio-*.tgz
