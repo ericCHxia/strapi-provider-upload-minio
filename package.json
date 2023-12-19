@@ -12,8 +12,7 @@
     }
   ],
   "scripts": {
-    "build": "tsup",
-    "postinstall": "npm run build"
+    "build": "tsup"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
