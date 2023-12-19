@@ -1,5 +1,5 @@
 import type { ReadStream } from "node:fs";
-import minio from "minio";
+import * as minio from "minio";
 import { ClientOptions } from "minio";
 export interface MinioProviderConfig extends ClientOptions {
   bucket: string;

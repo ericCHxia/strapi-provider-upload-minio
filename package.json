@@ -1,6 +1,6 @@
 {
   "name": "strapi-provider-upload-minio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/ericCHxia/strapi-provider-upload-minio.git"
@@ -18,7 +18,8 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-    "./dist"
+    "./dist",
+    "./src"
   ],
   "license": "MIT",
   "dependencies": {
